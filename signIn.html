@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/signIn.css">
+    <!-- <link rel="stylesheet" href="css/portal.css"> -->
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+    <!-- <link rel="stylesheet" href="css/website.css"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <a href="Home.html" h1> <span class="highlight">Claire</span> Web Design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Service.html">Service</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li class="current"><a href="portal.html">Client Portal</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="image/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="signIn-container">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+</body>
+</html>
